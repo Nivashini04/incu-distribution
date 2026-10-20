@@ -1,0 +1,31 @@
+﻿# Secrets and environment variables
+.env
+.env.*
+!.env.example
+# Python virtual environments
+.venv/
+.venv*/
+venv/
+env/
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+# Local databases and backups
+*.db
+*.sqlite
+*.sqlite3
+backups/
+data/
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Logs and build artifacts
+*.log
+build/
+dist/
+*.egg-info/

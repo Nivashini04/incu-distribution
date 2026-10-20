@@ -1,0 +1,19 @@
+services:
+  api:
+    build: .
+    container_name: incu-distribution-api
+
+    ports:
+      - "8000:8000"
+
+    env_file:
+      - .env
+
+    environment:
+      PYTHONUNBUFFERED: "1"
+      DATABASE_PATH: /app/data/incu_distribution.db
+
+    volumes:
+      - ./data:/app/data
+
+    restart: unless-stopped
